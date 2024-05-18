@@ -21,4 +21,4 @@ resource "aws_instance" "web" {
   tags = {
     Name = "HelloWorld-no"
   }
-}
+} With hardwork and diligence we shall make it. 
