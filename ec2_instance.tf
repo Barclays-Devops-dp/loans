@@ -19,6 +19,6 @@ resource "aws_instance" "web" {
   instance_type = "t2.micro"
 
   tags = {
-    Name = "HelloWorld-no"
+    Name = "HelloWorld-yes"
   }
-} With hardwork and diligence we shall make it. 
+}
