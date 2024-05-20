@@ -22,3 +22,5 @@ resource "aws_instance" "web" {
     Name = "HelloWorld-yes"
   }
 }
+
+we have added changes in DEV
