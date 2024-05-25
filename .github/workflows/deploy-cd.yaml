@@ -1,0 +1,18 @@
+#1. what is your action name:?
+name: Deploy Our Project  # NAME
+#2 when should run our action? : EVENT. things the happen on the repo. creates a pull request, create branch, push 
+on: [pull_request]
+#3 what is it that you want to you run? 
+  # a. things to run are defined in jobs. arrays
+  # b. where should we run the job? runs-on
+  # c. what are the steps to run
+  # add something
+jobs:
+  deploy-our-lovely-artefact:
+    runs-on: ubuntu-latest # linux
+    steps:
+      - uses: actions/checkout@v4
+      - name: create deploy folder
+        run: mkdir deploy-folder
+      - name: check system memory
+        run: cp ec2_instance.tf deploy-folder/
