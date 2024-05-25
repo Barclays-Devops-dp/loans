@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest # linux
     steps:
       - uses: actions/checkout@v4
-      - name: first step is to list all items in the repositry
+      - name: first step is to list all items in the repository
         run: ls
       - name: check system memory
         run: free
