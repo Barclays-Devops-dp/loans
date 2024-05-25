@@ -14,8 +14,12 @@ jobs:
       - uses: actions/checkout@v4
       - name: create deploy folder
         run: mkdir deploy-folder
-      - name: check system memory
+      - name: copy files
         run: cp ec2_instance.tf deploy-folder/
+      - name: download apache tomcat
+        run: |
+          wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.89/src/apache-tomcat-9.0.89-src.tar.gz
+          tar -xf apache-tomcat-9.0.89-src.tar.gz
       - name: list content after copy
         run: ls 
       - name: see file tree
