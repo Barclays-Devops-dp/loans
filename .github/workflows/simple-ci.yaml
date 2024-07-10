@@ -1,5 +1,5 @@
 #1. what is your action name:?
-name: Building something  # NAME
+name: AWS-CICD  # NAME
 #2 when should run our action? : EVENT. things the happen on the repo. creates a pull request, create branch, push 
 on: [push]
 #3 what is it that you want to you run? 
