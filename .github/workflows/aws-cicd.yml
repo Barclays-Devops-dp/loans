@@ -16,5 +16,8 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: eu-west-2
         
-      - name: list s3 buckets
-        run: aws s3 ls
+      # - name: list s3 buckets
+      #   run: aws s3 ls
+      
+       - name: describe ec2
+        run: aws ec2 describe
