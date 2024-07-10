@@ -4,10 +4,8 @@ jobs:
   interaction-with-aws:
     runs-on: ubuntu-latest # linux
     steps:
-      - uses: actions/checkout@v4
-      - name: ls
-        run: ls
-
+      - name: checkout repo
+        uses: actions/checkout@v4
 
       - name: configure aws environment
         uses: aws-actions/configure-aws-credentials@v4
@@ -15,9 +13,6 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: eu-west-2
-        
-      # - name: list s3 buckets
-      #   run: aws s3 ls
       
        - name: describe ec2
          run: aws ec2 describe
