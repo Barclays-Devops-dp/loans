@@ -29,4 +29,4 @@ jobs:
 
     - name: Create EC2 instance
       run: |
-        aws ec2 run-instances --image-id ami-0abcdef1234567890 --count 1 --instance-type t2.micro --key-name YourKeyPairName --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=GitHubActionEC2}]'
+        aws ec2 run-instances --image-id ami-0fe310dde2a8fdc5c --count 1 --instance-type t2.micro --key-name YourKeyPairName --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=GitHubActionEC2}]'
