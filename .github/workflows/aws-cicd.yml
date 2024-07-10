@@ -9,6 +9,13 @@ jobs:
         run: ls
 
 
+      - name: configure aws environment
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: eu-west-2
+        
       - name: list s3 buckets
         uses: aws-actions/configure-aws-credentials@v4
         run: aws s3 ls
