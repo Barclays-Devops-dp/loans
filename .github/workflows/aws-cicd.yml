@@ -1,0 +1,9 @@
+name: Building something  
+on: [push]
+jobs:
+  interaction-with-aws:
+    runs-on: ubuntu-latest # linux
+    steps:
+      - uses: actions/checkout@v4
+      - name: ls
+        run: ls
