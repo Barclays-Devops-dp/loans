@@ -9,6 +9,8 @@ jobs:
         run: ls
 
 
-      - name: list s3 buckets
+      - name: configure aws environment
         uses: aws-actions/configure-aws-credentials@v4
+        
+      - name: list s3 buckets
         run: aws s3 ls
