@@ -26,3 +26,7 @@ jobs:
     - name: List S3 bucket contents
       run: |
         aws s3 ls 
+
+    - name: Create EC2 instance
+      run: |
+        aws ec2 run-instances --image-id ami-0abcdef1234567890 --count 1 --instance-type t2.micro --key-name YourKeyPairName --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=GitHubActionEC2}]'
