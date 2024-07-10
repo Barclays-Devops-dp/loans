@@ -20,4 +20,4 @@ jobs:
       #   run: aws s3 ls
       
        - name: describe ec2
-        run: aws ec2 describe
+         run: aws ec2 describe
