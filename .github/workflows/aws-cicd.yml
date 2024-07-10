@@ -7,3 +7,5 @@ jobs:
       - uses: actions/checkout@v4
       - name: ls
         run: ls
+      - name: list s3 buckets
+        run: aws s3 ls
