@@ -1,4 +1,4 @@
-name: Building something  
+name: AWS-CICD 
 on: [push]
 jobs:
   interaction-with-aws:
