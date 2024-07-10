@@ -18,7 +18,7 @@ jobs:
       with:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        aws-region: us-east-1  # Change this to your desired region
+        aws-region: eu-west-2  # Change this to your desired region
         role-to-assume: arn:aws:iam::612773348282:role/s3_access_for_ec2s
         role-session-name: my-github-role-assumption
         role-duration-seconds: 900
