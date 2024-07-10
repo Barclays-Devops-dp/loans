@@ -17,5 +17,4 @@ jobs:
           aws-region: eu-west-2
         
       - name: list s3 buckets
-        uses: aws-actions/configure-aws-credentials@v4
         run: aws s3 ls
